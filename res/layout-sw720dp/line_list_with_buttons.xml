@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lineListContainer"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right"
+    android:background="#FFFFFFFF"
+    >
+	<LinearLayout
+      	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="horizontal">
+    	<LinearLayout
+    	    android:layout_width="400dp"
+    	    android:layout_height="fill_parent"
+    	    android:orientation="vertical"
+    	    android:gravity="center_horizontal">
+    	    <ImageView 
+    	        android:layout_width="316dp"
+    	        android:layout_height="242dp"
+    	        android:layout_margin="50dp"
+    	        android:src="@drawable/collect_rect"/>
+    	    <Button
+    	        android:id="@+id/btnAddRecord"
+    	        android:layout_width="328dp"
+    	        android:layout_height="48dp"
+    	        android:background="@drawable/cd_btn_add_record"/>
+    	    <Button
+    	        android:id="@+id/btnGenerateMap"
+    	        android:layout_width="328dp"
+    	        android:layout_height="48dp"
+    	        android:layout_margin="30dp"
+    	        android:background="@drawable/cd_btn_generate_map"/>
+    	    <Button
+    	        android:id="@+id/btnCreateSyncFile"
+    	        android:layout_width="328dp"
+    	        android:layout_height="48dp"
+    	        android:background="@drawable/cd_btn_sync_file"/>
+    	</LinearLayout>
+    	<ListView android:id="@+id/android:list"
+          	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:gravity="right" android:background="@drawable/list_rectangle"/>
+  		<TextView android:id="@+id/android:empty"
+      		android:layout_width="fill_parent"
+    		android:layout_height="?android:attr/listPreferredItemHeight"
+    		android:textAppearance="?android:attr/textAppearanceLarge"
+    		android:gravity="center_vertical"
+    		android:paddingLeft="5dip"
+    		android:singleLine="true"
+        	android:text="@string/no_notes"/>
+	</LinearLayout>
+</LinearLayout>
